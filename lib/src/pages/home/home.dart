@@ -1,7 +1,7 @@
 // ignore_for_file: non_constant_identifier_names
 
 import 'package:flutter/material.dart';
-import 'package:to_do_list/src/classes/tarefa.dart';
+import 'package:to_do_list/src/models/tarefa.dart';
 
 // Essas duas classes existem por conta de arquitetura de programação, por causa de closer.
 

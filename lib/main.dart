@@ -10,12 +10,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String nome = 'To-Do App'; // nome do aplicativo
     return MaterialApp(
-      title: nome,
-      home: SafeArea( // Um widget evita invasões do sistema operacional.
-        child: MyHome(nomeapp: nome,),
-      ),
+      home: MyHome(),
     );
   }
 }

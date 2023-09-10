@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:to_do_list/src/pages/home/home.dart';
+import 'package:flutter_object_box/app.dart';
+import 'package:flutter_object_box/providers.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+import 'package:provider/provider.dart';
+import 'package:timeago/timeago.dart' as timeago;
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
 
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: MyHome(),
-    );
-  }
+  timeago.setLocaleMessages('pt_br', timeago.PtBrMessages());
+  timeago.setDefaultLocale('pt_br');
+
+  runApp(
+    MultiProvider(
+      providers: providers,
+      child: const App(),
+    ),
+  );
 }

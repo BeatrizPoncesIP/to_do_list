@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_object_box/database/objectbox.g.dart';
-import 'package:flutter_object_box/database/objectbox_database.dart';
-import 'package:flutter_object_box/entities/todo.dart';
+import 'package:to_do_list/database/objectbox.g.dart';
+import 'package:to_do_list/database/objectbox_database.dart';
+import 'package:to_do_list/entities/todo.dart';
 
 class ToDoRepository extends ChangeNotifier {
   List<ToDo> _todos = [];

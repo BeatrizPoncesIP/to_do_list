@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_object_box/repositories/todo_repository.dart';
+import 'package:to_do_list/repositories/todo_repository.dart';
 import 'package:provider/provider.dart';
 
 class AddToDoPage extends StatefulWidget {
@@ -67,9 +67,9 @@ class _AddToDoPageState extends State<AddToDoPage> {
                 padding: const EdgeInsets.only(top: 24.0),
                 child: ElevatedButton(
                   onPressed: salvar,
-                  child: Row(
+                  child: const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
+                    children: [
                       Icon(Icons.check),
                       Padding(
                         padding: EdgeInsets.all(20),

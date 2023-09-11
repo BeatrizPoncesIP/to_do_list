@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-
-import 'package:flutter_object_box/pages/feed_page.dart';
-import 'package:flutter_object_box/pages/todo_page.dart';
-import 'package:flutter_object_box/widgets/auth_check.dart';
+import 'package:to_do_list/pages/feed_page.dart';
+import 'package:to_do_list/pages/todo_page.dart';
+import 'package:to_do_list/widgets/auth_check.dart';
 
 class Routes {
-  static Map<String, Widget Function(BuildContext)> list = <String, WidgetBuilder>{
+  static Map<String, Widget Function(BuildContext)> list =
+      <String, WidgetBuilder>{
     '/todos/list': (_) => const ToDoPage(),
     '/feed': (_) => const FeedPage(),
     '/auth-check': (_) => const AuthCheck(),

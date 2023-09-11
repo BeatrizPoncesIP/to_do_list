@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_object_box/pages/add_todo_page.dart';
-import 'package:flutter_object_box/repositories/todo_repository.dart';
+import 'package:to_do_list/pages/add_todo_page.dart';
+import 'package:to_do_list/repositories/todo_repository.dart';
 import 'package:provider/provider.dart';
 
 final scaffoldKey = GlobalKey<ScaffoldState>();
@@ -93,7 +93,8 @@ class _ToDoPageState extends State<ToDoPage> {
                               valueListenable: showTodosNotDone,
                               builder: (context, _, __) => Switch(
                                 value: showTodosNotDone.value,
-                                onChanged: (val) => showTodosNotDone.value = val,
+                                onChanged: (val) =>
+                                    showTodosNotDone.value = val,
                               ),
                             ),
                           ),

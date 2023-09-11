@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'package:flutter_object_box/routes/routes.dart';
+import 'package:to_do_list/routes/routes.dart';
 
 class App extends StatelessWidget {
   final MaterialColor colorSeed = Colors.deepPurple;
@@ -15,9 +14,6 @@ class App extends StatelessWidget {
       themeMode: ThemeMode.dark,
       theme: ThemeData(
         primarySwatch: colorSeed,
-        // appBarTheme: Theme.of(context).appBarTheme.copyWith(
-        //       backgroundColor: Colors.black,
-        //     ),
       ),
       routes: Routes.list,
       initialRoute: Routes.authCheck,
